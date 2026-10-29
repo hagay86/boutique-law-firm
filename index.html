@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justice & Partners | Premier Legal Representation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            900: '#1e293b',
+                            800: '#334155',
+                            gold: '#c5a059',
+                            goldlight: '#e6c888',
+                            light: '#f8fafc'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-slate-700 antialiased bg-white">
+
+    <!-- Header / Navigation -->
+    <header class="bg-white shadow-sm fixed w-full top-0 z-50 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-2 group">
+                    <div class="bg-brand-900 text-white p-2 rounded-sm group-hover:bg-brand-gold transition-colors">
+                        <i data-lucide="scale" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h1 class="font-serif text-xl font-bold text-brand-900 tracking-wide">JUSTICE & PARTNERS</h1>
+                        <p class="text-xs text-slate-500 uppercase tracking-widest">Attorneys at Law</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-sm font-semibold hover:text-brand-gold transition-colors">Home</a>
+                    <a href="#practice-areas" class="text-sm font-semibold hover:text-brand-gold transition-colors">Practice Areas</a>
+                    <a href="#attorneys" class="text-sm font-semibold hover:text-brand-gold transition-colors">Our Team</a>
+                    <a href="#results" class="text-sm font-semibold hover:text-brand-gold transition-colors">Results</a>
+                    <a href="#resources" class="text-sm font-semibold hover:text-brand-gold transition-colors">Resources</a>
+                    <a href="#contact" class="px-5 py-2.5 bg-brand-900 text-white text-sm font-semibold hover:bg-brand-gold transition-all duration-300 shadow-md">Free Consultation</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-brand-900">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Nav -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="flex flex-col p-4 space-y-4">
+                <a href="#home" class="font-semibold hover:text-brand-gold">Home</a>
+                <a href="#practice-areas" class="font-semibold hover:text-brand-gold">Practice Areas</a>
+                <a href="#attorneys" class="font-semibold hover:text-brand-gold">Our Team</a>
+                <a href="#results" class="font-semibold hover:text-brand-gold">Results</a>
+                <a href="#resources" class="font-semibold hover:text-brand-gold">Resources</a>
+                <a href="#contact" class="text-center px-5 py-3 bg-brand-900 text-white font-semibold">Free Consultation</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-brand-900 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&h=630&fit=crop" alt="City Law Building" class="w-full h-full object-cover opacity-20">
+            <div class="absolute inset-0 bg-gradient-to-r from-brand-900 via-brand-900/90 to-brand-900/40"></div>
+        </div>
+        <div class="container mx-auto px-4 lg:px-8 relative z-10">
+            <div class="max-w-3xl">
+                <div class="inline-block px-3 py-1 mb-6 border border-brand-gold/50 rounded-full">
+                    <span class="text-brand-gold text-xs font-bold uppercase tracking-widest">Trusted Legal Excellence</span>
+                </div>
+                <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+                    Relentless Advocacy.<br>
+                    <span class="text-brand-gold">Proven Results.</span>
+                </h1>
+                <p class="text-slate-300 text-lg md:text-xl mb-8 max-w-2xl leading-relaxed">
+                    With over 50 years of combined experience, Justice & Partners is dedicated to protecting your rights and securing your future. We fight hard so you can rest easy.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 bg-brand-gold text-brand-900 font-bold hover:bg-white transition-colors shadow-lg">
+                        Get a Free Consultation
+                        <i data-lucide="arrow-right" class="ml-2 w-5 h-5"></i>
+                    </a>
+                    <a href="#results" class="inline-flex items-center justify-center px-8 py-4 bg-transparent border border-white text-white font-bold hover:bg-white hover:text-brand-900 transition-colors">
+                        View Our Case Results
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Banner -->
+    <section class="bg-brand-800 py-10 border-b-4 border-brand-gold">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <p class="text-4xl font-serif font-bold text-white mb-1">$500M+</p>
+                    <p class="text-brand-gold text-sm uppercase tracking-wide">Recovered for Clients</p>
+                </div>
+                <div>
+                    <p class="text-4xl font-serif font-bold text-white mb-1">1,500+</p>
+                    <p class="text-brand-gold text-sm uppercase tracking-wide">Cases Won</p>
+                </div>
+                <div>
+                    <p class="text-4xl font-serif font-bold text-white mb-1">25+</p>
+                    <p class="text-brand-gold text-sm uppercase tracking-wide">Years Experience</p>
+                </div>
+                <div>
+                    <p class="text-4xl font-serif font-bold text-white mb-1">98%</p>
+                    <p class="text-brand-gold text-sm uppercase tracking-wide">Success Rate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practice Areas -->
+    <section id="practice-areas" class="py-20 bg-slate-50">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="text-center mb-16 max-w-2xl mx-auto">
+                <span class="text-brand-gold font-bold uppercase tracking-widest text-sm">Our Expertise</span>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-brand-900 mt-3 mb-4">Practice Areas</h2>
+                <p class="text-slate-600">We provide comprehensive legal services across a wide spectrum of practice areas, ensuring you receive specialized representation tailored to your specific situation.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 shadow-sm hover:shadow-xl transition-shadow duration-300 border-t-4 border-transparent hover:border-brand-gold group">
+                    <div class="w-12 h-12 bg-brand-900 text-brand-gold flex items-center justify-center rounded-sm mb-6 group-hover:bg-brand-gold group-hover:text-brand-900 transition-colors">
+                        <i data-lucide="gavel" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-brand-900 mb-3">Criminal Defense</h3>
+                    <p class="text-slate-600 mb-4 text-sm leading-relaxed">Aggressive defense for misdemeanors and felonies. We protect your constitutional rights and work tirelessly to dismiss charges or minimize penalties.</p>
+                    <a href="#contact" class="text-brand-900 font-bold text-sm border-b border-brand-900 pb-1 hover:text-brand-gold hover:border-brand-gold transition-colors">Learn More</a>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white p-8 shadow-sm hover:shadow-xl transition-shadow duration-300 border-t-4 border-transparent hover:border-brand-gold group">
+                    <div class="w-12 h-12 bg-brand-900 text-brand-gold flex items-center justify-center rounded-sm mb-6 group-hover:bg-brand-gold group-hover:text-brand-900 transition-colors">
+                        <i data-lucide="shield" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-brand-900 mb-3">Personal Injury</h3>
+                    <p class="text-slate-600 mb-4 text-sm leading-relaxed">Recovering maximum compensation for victims of car accidents, medical malpractice, slip and falls, and workplace injuries.</p>
+                    <a href="#contact" class="text-brand-900 font-bold text-sm border-b border-brand-900 pb-1 hover:text-brand-gold hover:border-brand-gold transition-colors">Learn More</a>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white p-8 shadow-sm hover:shadow-xl transition-shadow duration-300 border-t-4 border-transparent hover:border-brand-gold group">
+                    <div class="w-12 h-12 bg-brand-900 text-brand-gold flex items-center justify-center rounded-sm mb-6 group-hover:bg-brand-gold group-hover:text-brand-900 transition-colors">
+                        <i data-lucide="users" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-brand-900 mb-3">Family Law</h3>
+                    <p class="text-slate-600 mb-4 text-sm leading-relaxed">Compassionate guidance through divorce, child custody, alimony, and prenuptial agreements. We prioritize your family's well-being.</p>
+                    <a href="#contact" class="text-brand-900 font-bold text-sm border-b border-brand-900 pb-1 hover:text-brand-gold hover:border-brand-gold transition-colors">Learn More</a>
+                </div>
+                <!-- Card 4 -->
+                <div class="bg-white p-8 shadow-sm hover:shadow-xl transition-shadow duration-300 border-t-4 border-transparent hover:border-brand-gold group">
+                    <div class="w-12 h-12 bg-brand-900 text-brand-gold flex items-center justify-center rounded-sm mb-6 group-hover:bg-brand-gold group-hover:text-brand-900 transition-colors">
+                        <i data-lucide="briefcase" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-brand-900 mb-3">Corporate Law</h3>
+                    <p class="text-slate-600 mb-4 text-sm leading-relaxed">Strategic legal counsel for business formation, contract negotiations, mergers & acquisitions, and commercial litigation.</p>
+                    <a href="#contact" class="text-brand-900 font-bold text-sm border-b border-brand-900 pb-1 hover:text-brand-gold hover:border-brand-gold transition-colors">Learn More</a>
+                </div>
+                <!-- Card 5 -->
+                <div class="bg-white p-8 shadow-sm hover:shadow-xl transition-shadow duration-300 border-t-4 border-transparent hover:border-brand-gold group">
+                    <div class="w-12 h-12 bg-brand-900 text-brand-gold flex items-center justify-center rounded-sm mb-6 group-hover:bg-brand-gold group-hover:text-brand-900 transition-colors">
+                        <i data-lucide="home" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-brand-900 mb-3">Real Estate</h3>
+                    <p class="text-slate-600 mb-4 text-sm leading-relaxed">Assistance with residential and commercial transactions, property disputes, zoning issues, and landlord-tenant matters.</p>
+                    <a href="#contact" class="text-brand-900 font-bold text-sm border-b border-brand-900 pb-1 hover:text-brand-gold hover:border-brand-gold transition-colors">Learn More</a>
+                </div>
+                <!-- Card 6 -->
+                <div class="bg-white p-8 shadow-sm hover:shadow-xl transition-shadow duration-300 border-t-4 border-transparent hover:border-brand-gold group">
+                    <div class="w-12 h-12 bg-brand-900 text-brand-gold flex items-center justify-center rounded-sm mb-6 group-hover:bg-brand-gold group-hover:text-brand-900 transition-colors">
+                        <i data-lucide="heart-pulse" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-brand-900 mb-3">Estate Planning</h3>
+                    <p class="text-slate-600 mb-4 text-sm leading-relaxed">Secure your legacy with wills, trusts, power of attorney, and probate administration. We make the complex simple.</p>
+                    <a href="#contact" class="text-brand-900 font-bold text-sm border-b border-brand-900 pb-1 hover:text-brand-gold hover:border-brand-gold transition-colors">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Attorney Profiles -->
+    <section id="attorneys" class="py-20 bg-white">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-brand-gold font-bold uppercase tracking-widest text-sm">Meet The Team</span>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-brand-900 mt-3 mb-4">Our Attorneys</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">Our team of skilled lawyers brings diverse backgrounds and a shared passion for justice to every case we handle.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Attorney 1 -->
+                <div class="group">
+                    <div class="relative overflow-hidden mb-4">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=500&fit=crop&crop=top" alt="James Sterling" class="w-full h-80 object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-500">
+                        <div class="absolute inset-0 bg-brand-900/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3">
+                            <a href="#" class="p-2 bg-white text-brand-900 rounded-full hover:bg-brand-gold transition-colors"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                            <a href="#" class="p-2 bg-white text-brand-900 rounded-full hover:bg-brand-gold transition-colors"><i data-lucide="mail" class="w-5 h-5"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-brand-900">James Sterling</h3>
+                    <p class="text-brand-gold text-sm font-semibold mb-2">Senior Partner</p>
+                    <p class="text-slate-600 text-xs leading-relaxed mb-3">Harvard Law School. Specializes in complex corporate litigation and mergers.</p>
+                    <div class="text-xs text-slate-500">
+                        <span class="block">&#10003; 30+ Years Experience</span>
+                        <span class="block">&#10003; $200M+ in Settlements</span>
+                    </div>
+                </div>
+                <!-- Attorney 2 -->
+                <div class="group">
+                    <div class="relative overflow-hidden mb-4">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=500&fit=crop&crop=top" alt="Sarah Jenkins" class="w-full h-80 object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-500">
+                        <div class="absolute inset-0 bg-brand-900/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3">
+                            <a href="#" class="p-2 bg-white text-brand-900 rounded-full hover:bg-brand-gold transition-colors"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                            <a href="#" class="p-2 bg-white text-brand-900 rounded-full hover:bg-brand-gold transition-colors"><i data-lucide="mail" class="w-5 h-5"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-brand-900">Sarah Jenkins</h3>
+                    <p class="text-brand-gold text-sm font-semibold mb-2">Criminal Defense Lead</p>
+                    <p class="text-slate-600 text-xs leading-relaxed mb-3">Yale Law School. Former prosecutor with a 98% acquittal rate in felony cases.</p>
+                    <div class="text-xs text-slate-500">
+                        <span class="block">&#10003; 15 Years Experience</span>
+                        <span class="block">&#10003; 500+ Cases Defended</span>
+                    </div>
+                </div>
+                <!-- Attorney 3 -->
+                <div class="group">
+                    <div class="relative overflow-hidden mb-4">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop&crop=top" alt="Michael Ross" class="w-full h-80 object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-500">
+                        <div class="absolute inset-0 bg-brand-900/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3">
+                            <a href="#" class="p-2 bg-white text-brand-900 rounded-full hover:bg-brand-gold transition-colors"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                            <a href="#" class="p-2 bg-white text-brand-900 rounded-full hover:bg-brand-gold transition-colors"><i data-lucide="mail" class="w-5 h-5"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-brand-900">Michael Ross</h3>
+                    <p class="text-brand-gold text-sm font-semibold mb-2">Personal Injury</p>
+                    <p class="text-slate-600 text-xs leading-relaxed mb-3">Georgetown Law. Dedicated to fighting for the rights of accident victims.</p>
+                    <div class="text-xs text-slate-500">
+                        <span class="block">&#10003; 12 Years Experience</span>
+                        <span class="block">&#10003; Multi-Million Dollar Verdicts</span>
+                    </div>
+                </div>
+                <!-- Attorney 4 -->
+                <div class="group">
+                    <div class="relative overflow-hidden mb-4">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=500&fit=crop&crop=top" alt="Elena Rodriguez" class="w-full h-80 object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-500">
+                        <div class="absolute inset-0 bg-brand-900/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3">
+                            <a href="#" class="p-2 bg-white text-brand-900 rounded-full hover:bg-brand-gold transition-colors"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                            <a href="#" class="p-2 bg-white text-brand-900 rounded-full hover:bg-brand-gold transition-colors"><i data-lucide="mail" class="w-5 h-5"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-brand-900">Elena Rodriguez</h3>
+                    <p class="text-brand-gold text-sm font-semibold mb-2">Family Law</p>
+                    <p class="text-slate-600 text-xs leading-relaxed mb-3">Stanford Law. Compassionate advocate for families navigating difficult transitions.</p>
+                    <div class="text-xs text-slate-500">
+                        <span class="block">&#10003; 10 Years Experience</span>
+                        <span class="block">&#10003; Certified Mediator</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Results -->
+    <section id="results" class="py-20 bg-brand-900 text-white">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+                <div class="lg:w-1/2">
+                    <span class="text-brand-gold font-bold uppercase tracking-widest text-sm">Track Record</span>
+                    <h2 class="font-serif text-3xl md:text-4xl font-bold mt-3 mb-6">Recent Verdicts & Settlements</h2>
+                    <p class="text-slate-300 mb-8 leading-relaxed">We don't back down from a fight. Our proven track record speaks for itself, securing life-changing results for our clients.</p>
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-4">
+                            <div class="bg-brand-gold text-brand-900 font-bold p-2 rounded-sm">$4.5M</div>
+                            <div>
+                                <h4 class="font-bold text-lg">Medical Malpractice Settlement</h4>
+                                <p class="text-slate-400 text-sm">Secured for a family due to surgical error.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="bg-brand-gold text-brand-900 font-bold p-2 rounded-sm">$1.2M</div>
+                            <div>
+                                <h4 class="font-bold text-lg">Personal Injury Verdict</h4>
+                                <p class="text-slate-400 text-sm">Obtained for a client injured in a commercial trucking accident.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="bg-brand-gold text-brand-900 font-bold p-2 rounded-sm">Dismissed</div>
+                            <div>
+                                <h4 class="font-bold text-lg">Felony Drug Charges</h4>
+                                <p class="text-slate-400 text-sm">All charges dropped due to violation of 4th Amendment rights.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="bg-brand-gold text-brand-900 font-bold p-2 rounded-sm">$15M</div>
+                            <div>
+                                <h4 class="font-bold text-lg">Corporate Litigation</h4>
+                                <p class="text-slate-400 text-sm">Recovered for our client in a breach of contract lawsuit.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lg:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=640&h=360&fit=crop" alt="Courtroom" class="rounded-sm shadow-2xl border-4 border-brand-800">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources / Blog -->
+    <section id="resources" class="py-20 bg-slate-50">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-brand-gold font-bold uppercase tracking-widest text-sm">Knowledge Hub</span>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-brand-900 mt-3 mb-4">Legal Resources & Blog</h2>
+                <p class="text-slate-600">Stay informed with our latest legal insights, news, and helpful guides.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <article class="bg-white rounded-sm overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                    <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=640&h=360&fit=crop" alt="Car Accident" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-brand-gold text-xs font-bold uppercase mb-2">Personal Injury</div>
+                        <h3 class="font-serif text-lg font-bold text-brand-900 mb-3 hover:text-brand-gold cursor-pointer">What to Do Immediately After a Car Accident</h3>
+                        <p class="text-slate-600 text-sm mb-4 line-clamp-3">Knowing the right steps to take following an accident can protect your health and your legal rights to compensation.</p>
+                        <a href="#" class="text-brand-900 font-bold text-sm flex items-center hover:gap-2 transition-all">Read Article <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i></a>
+                    </div>
+                </article>
+                <!-- Blog Post 2 -->
+                <article class="bg-white rounded-sm overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                    <img src="https://images.unsplash.com/photo-1450101499163-c8848e968fc7?w=640&h=360&fit=crop" alt="Estate Planning" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-brand-gold text-xs font-bold uppercase mb-2">Estate Planning</div>
+                        <h3 class="font-serif text-lg font-bold text-brand-900 mb-3 hover:text-brand-gold cursor-pointer">5 Common Mistakes in Drafting a Will</h3>
+                        <p class="text-slate-600 text-sm mb-4 line-clamp-3">Avoid these critical errors to ensure your assets are distributed according to your wishes without unnecessary delays.</p>
+                        <a href="#" class="text-brand-900 font-bold text-sm flex items-center hover:gap-2 transition-all">Read Article <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i></a>
+                    </div>
+                </article>
+                <!-- Blog Post 3 -->
+                <article class="bg-white rounded-sm overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=640&h=360&fit=crop" alt="Business Law" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-brand-gold text-xs font-bold uppercase mb-2">Corporate Law</div>
+                        <h3 class="font-serif text-lg font-bold text-brand-900 mb-3 hover:text-brand-gold cursor-pointer">Understanding NDAs: When Do You Need One?</h3>
+                        <p class="text-slate-600 text-sm mb-4 line-clamp-3">Non-disclosure agreements are vital for protecting trade secrets. Learn when they are essential for your business.</p>
+                        <a href="#" class="text-brand-900 font-bold text-sm flex items-center hover:gap-2 transition-all">Read Article <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-brand-gold font-bold uppercase tracking-widest text-sm">Client Stories</span>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-brand-900 mt-3 mb-4">What Our Clients Say</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-50 p-8 relative">
+                    <div class="absolute top-4 left-8 text-6xl text-brand-gold/20 font-serif">&ldquo;</div>
+                    <p class="text-slate-700 mb-6 relative z-10 italic">"When I was facing serious charges, I thought my life was over. The team at Justice & Partners never stopped fighting for me. They got the case dismissed completely. I am forever grateful."</p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face" alt="Client" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-bold text-brand-900 text-sm">Robert M.</h4>
+                            <div class="text-brand-gold flex text-xs">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-50 p-8 relative">
+                    <div class="absolute top-4 left-8 text-6xl text-brand-gold/20 font-serif">&ldquo;</div>
+                    <p class="text-slate-700 mb-6 relative z-10 italic">"After my accident, the insurance company offered me pennies. James Sterling stepped in and secured a settlement that will cover my medical care for years. Highly professional and compassionate."</p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face" alt="Client" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-bold text-brand-900 text-sm">Linda K.</h4>
+                            <div class="text-brand-gold flex text-xs">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-50 p-8 relative">
+                    <div class="absolute top-4 left-8 text-6xl text-brand-gold/20 font-serif">&ldquo;</div>
+                    <p class="text-slate-700 mb-6 relative z-10 italic">"Navigating my divorce was the hardest thing I've ever done. Elena was not just my lawyer, she was my rock. She fought for my children and I couldn't be happier with the outcome."</p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face" alt="Client" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-bold text-brand-900 text-sm">Amanda S.</h4>
+                            <div class="text-brand-gold flex text-xs">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-slate-50">
+        <div class="container mx-auto px-4 lg:px-8 max-w-4xl">
+            <div class="text-center mb-16">
+                <span class="text-brand-gold font-bold uppercase tracking-widest text-sm">Common Questions</span>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-brand-900 mt-3 mb-4">Frequently Asked Questions</h2>
+            </div>
+            <div class="space-y-4" id="faq-container">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white border border-slate-200 rounded-sm overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-5 text-left font-semibold text-brand-900 hover:bg-slate-50 transition-colors">
+                        How much does a consultation cost?
+                        <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-5 text-slate-600 text-sm leading-relaxed">
+                        We offer a free initial consultation for most personal injury and criminal defense cases. For other areas of law, such as corporate or family law, we offer a complimentary 15-minute phone screening to determine if we can assist you, followed by a paid detailed consultation.
+                    </div>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="bg-white border border-slate-200 rounded-sm overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-5 text-left font-semibold text-brand-900 hover:bg-slate-50 transition-colors">
+                        How do I know if I have a valid case?
+                        <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-5 text-slate-600 text-sm leading-relaxed">
+                        Every situation is unique. The best way to determine if you have a case is to speak with one of our experienced attorneys. During the consultation, we will review the facts of your case, applicable laws, and advise you on the best course of action.
+                    </div>
+                </div>
+                <!-- FAQ Item 3 -->
+                <div class="bg-white border border-slate-200 rounded-sm overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-5 text-left font-semibold text-brand-900 hover:bg-slate-50 transition-colors">
+                        What are your fees?
+                        <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-5 text-slate-600 text-sm leading-relaxed">
+                        Our fee structure depends on the type of case. For personal injury, we work on a contingency fee basis, meaning you pay nothing unless we win. For criminal defense and civil matters, we typically charge an hourly rate or a flat fee depending on the complexity of the case.
+                    </div>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="bg-white border border-slate-200 rounded-sm overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-5 text-left font-semibold text-brand-900 hover:bg-slate-50 transition-colors">
+                        How long will my case take?
+                        <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-5 text-slate-600 text-sm leading-relaxed">
+                        Timelines vary significantly based on the nature of the case, court schedules, and the willingness of the opposing party to negotiate. A simple car accident claim might settle in a few months, while complex litigation can take years. We will keep you informed every step of the way.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation & Contact -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <!-- Booking Form -->
+                <div>
+                    <span class="text-brand-gold font-bold uppercase tracking-widest text-sm">Get Started</span>
+                    <h2 class="font-serif text-3xl md:text-4xl font-bold text-brand-900 mt-3 mb-6">Request a Free Consultation</h2>
+                    <p class="text-slate-600 mb-8">Fill out the form below and one of our attorneys will contact you within 24 hours to discuss your case.</p>
+                    <form id="consultation-form" class="space-y-5">
+                        <div class="grid md:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-sm font-bold text-brand-900 mb-2">Full Name</label>
+                                <input type="text" class="w-full p-3 border border-slate-300 rounded-sm focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition-colors" placeholder="John Doe" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-brand-900 mb-2">Phone Number</label>
+                                <input type="tel" class="w-full p-3 border border-slate-300 rounded-sm focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition-colors" placeholder="(555) 123-4567" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-brand-900 mb-2">Email Address</label>
+                            <input type="email" class="w-full p-3 border border-slate-300 rounded-sm focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition-colors" placeholder="john@example.com" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-brand-900 mb-2">Practice Area</label>
+                            <select class="w-full p-3 border border-slate-300 rounded-sm focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition-colors bg-white">
+                                <option>Please select a practice area...</option>
+                                <option>Personal Injury</option>
+                                <option>Criminal Defense</option>
+                                <option>Family Law</option>
+                                <option>Corporate Law</option>
+                                <option>Real Estate</option>
+                                <option>Estate Planning</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-brand-900 mb-2">Brief Description of Case</label>
+                            <textarea rows="4" class="w-full p-3 border border-slate-300 rounded-sm focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition-colors" placeholder="Please do not include sensitive confidential information..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-brand-900 text-white font-bold py-4 hover:bg-brand-gold hover:text-brand-900 transition-colors shadow-lg">
+                            Submit Request
+                        </button>
+                        <p class="text-xs text-slate-500 text-center">By submitting this form, you agree to our privacy policy.</p>
+                    </form>
+                </div>
+
+                <!-- Contact Info & Locations -->
+                <div class="bg-slate-900 text-white p-10 rounded-sm">
+                    <h3 class="font-serif text-2xl font-bold mb-8">Contact Information</h3>
+                    <div class="space-y-8 mb-12">
+                        <div class="flex gap-4">
+                            <div class="text-brand-gold mt-1"><i data-lucide="phone"></i></div>
+                            <div>
+                                <h4 class="font-bold mb-1">Phone</h4>
+                                <p class="text-slate-300">(555) 123-4567</p>
+                                <p class="text-xs text-slate-500">Available 24/7 for emergencies</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="text-brand-gold mt-1"><i data-lucide="mail"></i></div>
+                            <div>
+                                <h4 class="font-bold mb-1">Email</h4>
+                                <p class="text-slate-300">contact@justicepartners.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="font-serif text-2xl font-bold mb-6">Office Locations</h3>
+                    <div class="space-y-6">
+                        <!-- Location 1 -->
+                        <div class="border-l-2 border-brand-gold pl-6">
+                            <h4 class="font-bold text-lg">Downtown Headquarters</h4>
+                            <p class="text-slate-300 text-sm mb-2">123 Legal Avenue, Suite 400<br>Metropolis, NY 10001</p>
+                            <a href="#" class="text-brand-gold text-xs font-bold hover:underline">Get Directions</a>
+                            <p class="text-xs text-slate-500 mt-2">Mon-Fri: 8am - 7pm</p>
+                        </div>
+                        <!-- Location 2 -->
+                        <div class="border-l-2 border-slate-600 pl-6">
+                            <h4 class="font-bold text-lg">Westside Branch</h4>
+                            <p class="text-slate-300 text-sm mb-2">456 Justice Blvd<br>Metropolis, NY 10005</p>
+                            <a href="#" class="text-brand-gold text-xs font-bold hover:underline">Get Directions</a>
+                            <p class="text-xs text-slate-500 mt-2">Mon-Fri: 9am - 5pm</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-10 pt-8 border-t border-slate-700">
+                        <p class="text-sm text-slate-400 italic">"The right to be heard does not automatically include the right to be taken seriously."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h5 class="text-white font-serif font-bold text-lg mb-4">Justice & Partners</h5>
+                    <p class="text-sm leading-relaxed mb-4">Dedicated to providing exceptional legal representation with integrity, compassion, and relentless advocacy.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="hover:text-brand-gold"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                        <a href="#" class="hover:text-brand-gold"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+                        <a href="#" class="hover:text-brand-gold"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="text-white font-bold mb-4">Quick Links</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#home" class="hover:text-brand-gold">Home</a></li>
+                        <li><a href="#about" class="hover:text-brand-gold">About Us</a></li>
+                        <li><a href="#attorneys" class="hover:text-brand-gold">Attorneys</a></li>
+                        <li><a href="#results" class="hover:text-brand-gold">Case Results</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-white font-bold mb-4">Practice Areas</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-brand-gold">Personal Injury</a></li>
+                        <li><a href="#" class="hover:text-brand-gold">Criminal Defense</a></li>
+                        <li><a href="#" class="hover:text-brand-gold">Family Law</a></li>
+                        <li><a href="#" class="hover:text-brand-gold">Corporate Law</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-white font-bold mb-4">Newsletter</h5>
+                    <p class="text-xs mb-4">Subscribe for legal news and firm updates.</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Email" class="bg-slate-800 text-white px-3 py-2 text-sm w-full outline-none focus:bg-slate-700">
+                        <button class="bg-brand-gold text-brand-900 px-3 font-bold hover:bg-white transition-colors">GO</button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs">
+                <p>&copy; 2025 Justice & Partners Law Firm. All rights reserved.</p>
+                <div class="flex gap-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <a href="#" class="hover:text-white">Disclaimer</a>
+                    <a href="#" class="hover:text-white">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="script.js"></script>
+</body>
+</html>
